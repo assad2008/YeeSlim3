@@ -1,9 +1,9 @@
 {
-    "name": "assad2008/yeeslim3",
+    "name": "assad2008/YeeSlim3",
     "description": "Slim Framework 3 skeleton application.",
     "type": "project",
     "keywords": ["slim", "slim 3", "skeleton"],
-    "homepage": "https://github.com/HavenShen/slim-born",
+    "homepage": "https://github.com/assad2008/YeeSlim3",
     "license": "MIT",
     "authors": [
         {
