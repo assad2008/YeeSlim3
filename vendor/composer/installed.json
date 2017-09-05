@@ -1159,8 +1159,8 @@
     },
     {
         "name": "illuminate/contracts",
-        "version": "v5.5.0",
-        "version_normalized": "5.5.0.0",
+        "version": "v5.5.2",
+        "version_normalized": "5.5.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/contracts.git",
@@ -1205,17 +1205,17 @@
     },
     {
         "name": "illuminate/support",
-        "version": "v5.5.0",
-        "version_normalized": "5.5.0.0",
+        "version": "v5.5.2",
+        "version_normalized": "5.5.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/support.git",
-            "reference": "8fd54c43171117146f7de7d5d24d59747f41bd77"
+            "reference": "6a1c08c4e89429a0333ad86c489088ceeadbcced"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/support/zipball/8fd54c43171117146f7de7d5d24d59747f41bd77",
-            "reference": "8fd54c43171117146f7de7d5d24d59747f41bd77",
+            "url": "https://api.github.com/repos/illuminate/support/zipball/6a1c08c4e89429a0333ad86c489088ceeadbcced",
+            "reference": "6a1c08c4e89429a0333ad86c489088ceeadbcced",
             "shasum": ""
         },
         "require": {
@@ -1233,7 +1233,7 @@
             "symfony/process": "Required to use the composer class (~3.3).",
             "symfony/var-dumper": "Required to use the dd function (~3.3)."
         },
-        "time": "2017-08-29T07:40:48+00:00",
+        "time": "2017-09-04T14:00:07+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1264,8 +1264,8 @@
     },
     {
         "name": "illuminate/container",
-        "version": "v5.5.0",
-        "version_normalized": "5.5.0.0",
+        "version": "v5.5.2",
+        "version_normalized": "5.5.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/container.git",
@@ -1310,17 +1310,17 @@
     },
     {
         "name": "illuminate/database",
-        "version": "v5.5.0",
-        "version_normalized": "5.5.0.0",
+        "version": "v5.5.2",
+        "version_normalized": "5.5.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/database.git",
-            "reference": "0f8b6398baf4762fe147295dee156956f00a7743"
+            "reference": "679b52a11703578cbf1215095dde0a2adfbe6bea"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/database/zipball/0f8b6398baf4762fe147295dee156956f00a7743",
-            "reference": "0f8b6398baf4762fe147295dee156956f00a7743",
+            "url": "https://api.github.com/repos/illuminate/database/zipball/679b52a11703578cbf1215095dde0a2adfbe6bea",
+            "reference": "679b52a11703578cbf1215095dde0a2adfbe6bea",
             "shasum": ""
         },
         "require": {
@@ -1337,7 +1337,7 @@
             "illuminate/filesystem": "Required to use the migrations (5.5.*).",
             "illuminate/pagination": "Required to paginate the result set (5.5.*)."
         },
-        "time": "2017-08-29T19:22:34+00:00",
+        "time": "2017-09-03T15:31:52+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
