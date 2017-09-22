@@ -31,7 +31,7 @@ $container['view'] = function ($c) {
     
     // Instantiate and add Slim specific extension
     $basePath = rtrim(str_ireplace('index.php', '', $c['request']->getUri()->getBasePath()), '/');
-    $view->addExtension(new Slim\Views\TwigExtension($c['router'], $basePath));
+    $view->addExtension(new \Slim\Views\TwigExtension($c['router'], $basePath));
 
     return $view;
 };
@@ -42,6 +42,15 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
         'name' => $args['name']
     ]);
 })->setName('profile');
+
+// Render from string
+$app->get('/hi/{name}', function ($request, $response, $args) {
+    $str = $this->view->fetchFromString('<p>Hi, my name is {{ name }}.</p>', [
+        'name' => $args['name']
+    ]);
+    $response->getBody()->write($str);
+    return $response;
+});
 
 // Run app
 $app->run();
@@ -56,7 +65,8 @@ This component exposes a custom `path_for()` function to your Twig templates. Yo
     {% block body %}
     <h1>User List</h1>
     <ul>
-        <li><a href="{{ path_for('profile', { 'name': 'josh' }) }}">Josh</a></li>
+        <li><a href="{{ path_for('profile', { 'name': 'josh' }) }}" {% if is_current_path('profle', { 'name': 'josh' }) %}class="active"{% endif %}>Josh</a></li>
+        <li><a href="{{ path_for('profile', { 'name': 'andrew' }) }}">Andrew</a></li>
     </ul>
     {% endblock %}
 
