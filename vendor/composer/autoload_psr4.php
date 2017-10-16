@@ -14,6 +14,7 @@ return array(
     'Slim\\Flash\\' => array($vendorDir . '/slim/flash/src'),
     'Slim\\Csrf\\' => array($vendorDir . '/slim/csrf/src'),
     'Slim\\' => array($vendorDir . '/slim/slim/Slim'),
+    'Respect\\Validation\\' => array($vendorDir . '/respect/validation/library'),
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
