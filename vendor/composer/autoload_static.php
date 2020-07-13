@@ -8,6 +8,7 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -26,6 +27,7 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Translation\\' => 30,
@@ -47,7 +49,6 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
         ),
         'I' => 
         array (
-            'Interop\\Container\\' => 18,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Database\\' => 20,
             'Illuminate\\Contracts\\' => 21,
@@ -59,6 +60,7 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
         ),
         'D' => 
         array (
+            'Doctrine\\Inflector\\' => 19,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
         ),
@@ -80,6 +82,10 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Php80\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -129,10 +135,6 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Interop\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
-        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/support',
@@ -152,6 +154,10 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
@@ -200,6 +206,7 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
     );
 
     public static $classMap = array (
+        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Tracy\\Bar' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Bar/Bar.php',
         'Tracy\\BlueScreen' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php',
         'Tracy\\Bridges\\Nette\\Bridge' => __DIR__ . '/..' . '/tracy/tracy/src/Bridges/Nette/Bridge.php',
@@ -216,6 +223,7 @@ class ComposerStaticInit8ef546f9b4937ccddaf5a74ffa8b6228
         'Tracy\\ILogger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Logger/ILogger.php',
         'Tracy\\Logger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Logger/Logger.php',
         'Tracy\\OutputDebugger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/OutputDebugger/OutputDebugger.php',
+        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
