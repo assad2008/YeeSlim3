@@ -13,7 +13,7 @@
     ],
     "require": {
         "slim/slim": "^3.8",
-        "illuminate/database": "^5.4",
+        "illuminate/database": "^6.20",
         "slim/csrf": "^0.8.1",
         "twig/twig": "^2.4",
         "tracy/tracy": "^2.4",
